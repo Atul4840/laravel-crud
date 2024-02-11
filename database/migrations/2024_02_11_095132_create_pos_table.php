@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('pos', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('customer_id'); // Assuming customer_id is an integer
+            $table->string('customer_name'); // Assuming customer_id is an integer
             $table->decimal('discount', 5, 2)->default(0);
             $table->timestamps();
         });
